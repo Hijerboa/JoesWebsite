@@ -1,0 +1,68 @@
+.background{
+  background-color: #0017C7;
+}
+#logoPic{
+  text-align: center;
+}
+.white-background{
+  background-color: white;
+}
+.white{
+  color: white; !important
+}
+.QualityService{
+  text-align: center;
+  font-family: arial;
+  font-size: 36px;
+  font-weight: bold;
+}
+.quote{
+  text-align: center;
+  font-family: arial;
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar {
+    background-color: #EB7405;
+    border-color: #AA0000;
+    border-radius: 0;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #FFF;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    background-color: #C96100;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: #C96100;
+}
+
+.navbar .navbar-text {
+    color: #FFF;
+}
+
+.navbar .navbar-toggle {
+    border-color: #C96100;
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: #C96100;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
