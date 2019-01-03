@@ -5,6 +5,7 @@
   <title>Joe's Lakewood Computer</title>
   <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="index.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
 
 <body>
@@ -47,7 +48,7 @@
       <h1 class="quote">An owner operated small business offering affordable,
 professional and courteous computer sales and service
 to all of our diverse westside communities.</h1>
-      <div id="mainPageCarousel" class="carousel slide" data-ride="carousel">
+      <!--<div id="mainPageCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -60,7 +61,12 @@ to all of our diverse westside communities.</h1>
             </div>
           </div>
           <div class="item">
-            <center><img src="logo.png" alt="..."></center>
+            <center><img src="specialoffer1.png" alt="..."></center>
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <center><img src="specialoffer2.png" alt="..."></center>
             <div class="carousel-caption">
             </div>
           </div>
@@ -74,6 +80,31 @@ to all of our diverse westside communities.</h1>
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+      </div>-->
+      <center><img src="storefront.jpg" alt="storefront"></center>
+      <br />
+      <br />
+      <center><h1 id="whatWeDo">What We Do</h1></center>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-md-4" id="buy">
+          <center><i class="fas fa-money-bill-alt fa-10x"></i>
+          <h1 class="header36" style="font-weight: bold;">Buy</h1>
+          <br />
+          <p id="buyParagraph">Did you just buy a new computer? Have an old computer lying around you no longer need?
+            <br />
+            Well you're in luck! We buy used computers for a fair and competetive price. Just bring in your computer and one of our technicans will give you a quote for your computer.</p>
+        </center>
+        </div>
+        <div class="col-md-4" id="sell">
+          <center><i class="fas fa-shopping-cart fa-10x"></i>
+          <h1 class="header36">Sell</h1></center>
+        </div>
+        <div class="col-md-4" id="repair">
+          <center><i class="fas fa-tools fa-10x"></i>
+          <h1 class="header36">Repair</h1></center
+        </div>
       </div>
 		</div>
 	</div>
@@ -85,6 +116,13 @@ to all of our diverse westside communities.</h1>
 	$('.navbar-collapse a').click(function(){
 		$(".navbar-collapse").collapse('hide');
 	});
+  /*$("#mainPageCarousel").carousel();
+  $('.left').click(function(){
+    $("#mainPageCarousel").carousel('prev');
+  });
+  $('.right').click(function(){
+    $("#mainPageCarousel").carousel('next');
+  });*/
 </script>
 
 </body>
