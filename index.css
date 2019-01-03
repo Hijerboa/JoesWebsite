@@ -23,12 +23,14 @@
 }
 #whatWeDo{
   font-family: arial;
-  font-size: 36px;
+  font-size: 45px;
   font-weight: bold;
 }
-#buyParagraph{
+.paragraphs{
   font-size: 16px;
+  font-weight: normal;
 }
+
 #buy{
   font-family: arial;
 }
@@ -39,6 +41,9 @@
 #repair{
   font-family: arial;
   font-weight: bold;
+}
+#storefrontPic{
+  max-width: 80%
 }
 .quote{
   text-align: center;
