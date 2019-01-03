@@ -42,9 +42,17 @@
   font-family: arial;
   font-weight: bold;
 }
+<<<<<<< Updated upstream
 #storefrontPic{
   max-width: 80%
 }
+=======
+#mainPageCarousel{
+  max-width: 90%;
+  min-width: 70%;
+}
+
+>>>>>>> Stashed changes
 .quote{
   text-align: center;
   font-family: arial;
