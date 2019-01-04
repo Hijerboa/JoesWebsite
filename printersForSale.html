@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Printers For Sale</title>
+  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  </head>
+  <style>
+  .orangeBackground{
+    background-color: #d97c27;
+    font-weight: bold;
+    color: white;
+  }
+  .background{
+    background-color: #0958a3;
+  }
+  .white-background{
+    background-color: #E9E8E8;
+  }
+  .white{
+    color: white; !important
+  }
+  .navbar {
+      background-color: #d97c27;
+      border-color: #d97c27;
+      border-radius: 0;
+  }
+  .navbar .navbar-brand,
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+      color: #FFF;
+  }
+
+  .navbar .navbar-nav > li > a {
+      color: #FFF;
+  }
+
+  .navbar .navbar-nav > li > a:hover,
+  .navbar .navbar-nav > li > a:focus {
+      background-color: #C96100;
+  }
+
+  .navbar .navbar-nav > .active > a,
+  .navbar .navbar-nav > .active > a:hover,
+  .navbar .navbar-nav > .active > a:focus {
+      color: #FFF;
+      background-color: #C96100;
+  }
+
+  .navbar .navbar-text {
+      color: #FFF;
+  }
+
+  .navbar .navbar-toggle {
+      border-color: #C96100;
+  }
+
+  .navbar .navbar-toggle:hover,
+  .navbar .navbar-toggle:focus {
+      background-color: #C96100;
+  }
+
+  .navbar .navbar-toggle .icon-bar {
+      background-color: #FFF;
+  }
+  </style>
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<nav class="navbar navbar-fixed-top navbar-inverse">
+    		<div class="container-fluid">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Site-Navbar">
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="#">Joe's Lakewood Computer</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="Site-Navbar">
+    				<ul class="nav navbar-nav navbar-right">
+    					<li><a href="index.html">Home</a></li>
+    					<li><a href="aboutus.html">About us</a></li>
+              <li><a href="computerForSale.html">Computers for Sale</a></li>
+              <li class="active"><a href="printersForSale.html">Printers for Sale</a></li>
+              <li><a href="repairServices.html"repairServices.html>Repair Services</a></li>
+    					<li><a href="contactUs.html">Contact Us</a></li>
+              <li><a href="ourLakewoodFriends.html">Our Lakewood Friends</a></li>
+    				</ul>
+    				</div>
+    		</div>
+    	</nav>
+      <div class="row background">
+        <div class="col-md-10 col-md-offset-1 white-background">
+          <br />
+          <br />
+          <br />
+          <p>hi</p>
+          <div class="row orangeBackground">
+            <br />
+            <center><p id="footer">14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - © 2019 Joe's Lakewood Computer</p></center>
+    		  </div>
+        </div>
+      </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script language="javascript">
+  $(document).ready(function(){
+    var n = d.getFullYear();
+    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + d + " Joe's Lakewood Computer");
+  });
+	$('.navbar-collapse a').click(function(){
+		$(".navbar-collapse").collapse('hide');
+	});
+  </script>
+</html>
