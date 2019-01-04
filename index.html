@@ -15,6 +15,11 @@
     font-size: 36px;
     font-weight: bold;
   }
+  .orangeBackground{
+    background-color: #d97c27;
+    font-weight: bold;
+    color: white;
+  }
   #logoPic{
     text-align: center;
     border-radius: 5px;
@@ -29,6 +34,7 @@
   }
   #lifeRing{
     max-width: 85%;
+    max-height: 10%;
   }
   #needHelp{
     font-size: 45px;
@@ -87,7 +93,7 @@
   }
   .navbar {
       background-color: #d97c27;
-      border-color: #AA0000;
+      border-color: #d97c27;
       border-radius: 0;
   }
 
@@ -224,7 +230,10 @@ to all of our diverse westside communities.</h1>
           <br />
           <p class="paragraphs">Did you just buy a new computer? Have an old computer lying around you no longer need?
             <br />
-            Well you're in luck! We buy used computers for a fair and competetive price. Just bring in your computer and one of our technicans will give you a quote for your computer.</p>
+            Well you're in luck! We buy used computers for a fair and competetive price. Just bring in your computer and one of our technicans will give you a quote for your computer.
+            <br />
+            We buy computers in good condition which are running Windows 7, 8, or 10.
+            </p>
         </center>
         </div>
         <div class="col-md-4" id="sell">
@@ -255,7 +264,8 @@ to all of our diverse westside communities.</h1>
             <h2 class="stopInContact">Contact us:</h2>
             <h2 class="stopInContact">(216) 651-3880</h2>
             <h2 class="stopInContact">14035 Madison Ave
-              Lakewood, OH 44107</h2><center>
+              Lakewood, OH 44107</h2>
+            <h2 class="stopInContact">M-F: 10-7 Sat: 10-4 Sun: Closed</h2></center>
         </div>
       </div>
       <br />
@@ -269,16 +279,23 @@ to all of our diverse westside communities.</h1>
           <br />
         </div>
         <div class="col-md-6">
-          <center><a href="SplashtopSOS.exe"><img src="LifeRing.png" id="lifeRing"></a><center>
+          <center><a href="SplashtopSOS.exe"><img src="LifeRing.png" id="lifeRing" style="max-height: 20%;"></a><center>
         </div>
       </div>
-      <div class="row">
-		</div>
+      <br />
+      <div class="row orangeBackground">
+        <br />
+        <center><p id="footer">14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - © 2019 Joe's Lakewood Computer</p></center>
+		  </div>
 	</div>
 </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script language = "javascript">
+  $(document).ready(function(){
+    var n = d.getFullYear();
+    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + d + " Joe's Lakewood Computer");
+  });
 	$('.navbar-collapse a').click(function(){
 		$(".navbar-collapse").collapse('hide');
 	});
