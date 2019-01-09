@@ -64,6 +64,13 @@
   .navbar .navbar-toggle .icon-bar {
       background-color: #FFF;
   }
+  .paragraphText{
+    font-size: 18px;
+  }
+  #computerRepair{
+    max-height: 40%;
+    max-width: 40%
+  }
   </style>
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -95,7 +102,49 @@
           <br />
           <br />
           <br />
-          <p>hi</p>
+          <div class="row">
+            <center><h1 style="font-size: 45px; font-weight: bold;">About Us</h1>
+              <br />
+              <h2 style="font-size: 32px; font-weight: bold;">Our Mission: To serve the Greater Cleveland area with the best parts and services while maintaining a friendly and professional attitude.</h2>
+            </center>
+          </div>
+        <br />
+        <br />
+        <br />
+          <div class="row">
+            <div class="col-md-6">
+              <center><p class="paragraphText">Joe's Lakewood Computer is an owner operated computer shop serving Lakewood and the surrounding west-side suberbs.</p>
+                <p class="paragraphText">We specialize in PC, Laptop, & HP LaserJet Printer repair (we do not service Ink Jet printers), as well as technical support for companies and individuals.</p>
+              </center>
+            </div>
+            <div class="col-md-6">
+              <center><i class="fas fa-tools fa-8x"></i></center>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <br />
+              <center><img src="computerrepair.png" id="computerRepair"></center>
+            </div>
+            <div class="col-md-6">
+              <br />
+              <br />
+              <center><p class="paragraphText" id="servingSince2008">hi</p>
+                <p class="paragraphText">We buy both used computers and Laser printers, as well as sell refurbished computers and printers at a fair price.</p>
+                <p class="paragraphText"> We also have an expansive inventory of aftermarket toner cartridges, which we deliver to local businesses for free, as well as a small selection of ink cartirges.</p>
+              </center>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <br />
+              <center><p class="paragraphText">In addition to computer repair, computer parts, and selling computers, we specialize in HP Laser printers. If your laser printer is having problems, and you need a repair, we are confident that we will repair it in a quick and timely manner.</p>
+                <p class="paragraphText">We have daily in store deals, and competitive prices. If you have any computer related questions, feel free to stop in anytime and we will surely be able to help solve any of your computer woes.</p>
+              </center>
+            </div>
+            <div class="col-md-6">
+            </div>
+          </div>
           <div class="row orangeBackground">
             <br />
             <center><p id="footer">14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - © 2019 Joe's Lakewood Computer</p></center>
@@ -106,9 +155,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script language="javascript">
-  $(document).ready(function(){
+  $(document).ready(function() {
+    var d = new Date();
     var n = d.getFullYear();
-    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + d + " Joe's Lakewood Computer");
+    $("#servingSince2008").html("For the past " + (n - 2008) + " years we have been providing you with an assortment of high quality refurbished computers and computer parts at competetive and fair prices, with excellent service and an exceptional customer support experience.");
+    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + n + " Joe's Lakewood Computer");
   });
 	$('.navbar-collapse a').click(function(){
 		$(".navbar-collapse").collapse('hide');

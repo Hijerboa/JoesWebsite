@@ -64,6 +64,10 @@
   .navbar .navbar-toggle .icon-bar {
       background-color: #FFF;
   }
+  .contactHeader{
+    font-size: 26px;
+    font-weight: bold;
+  }
   </style>
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -95,7 +99,38 @@
           <br />
           <br />
           <br />
-          <p>hi</p>
+          <h1 style="text-align: center; font-weight: bold;">Contact Us</h1>
+            <div class="row">
+              <div class="col-md-6">
+                <center>
+                  <h1 class="contactHeader">Joe's Lakewood Computer</h1>
+                  <h1 class="contactHeader">14035 Madison Ave</h1>
+                  <h1 class="contactHeader">Lakewood OH 44107</h1>
+                  <br />
+                  <br />
+                  <br />
+                  <h1 class="contactHeader">Phone: (216) 651-3880</h1>
+                  <h1 class="contactHeader">joe@joeslakewoodcomputer.com</h1>
+                </center>
+              </div>
+              <div class="col-md-6">
+                <center>
+                  <h1 class="contactHeader">Hours:</h1>
+                  <h1 class="contactHeader">Monday: 10am - 7pm</h1>
+                  <h1 class="contactHeader">Tuesday: 10am - 7pm</h1>
+                  <h1 class="contactHeader">Wednesday: 10am - 7pm</h1>
+                  <h1 class="contactHeader">Thursday: 10am - 7pm</h1>
+                  <h1 class="contactHeader">Friday: 10am - 7pm</h1>
+                  <h1 class="contactHeader">Saturday: 10am - 4pm</h1>
+                  <h1 class="contactHeader">Sunday: Closed</h1>
+                </center>
+              </div>
+            </div>
+            <br />
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.267963272028!2d-81.79317068427108!3d41.4767899984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f20fe7ff51a9%3A0x9b289d0acc1ed1a4!2sJoe&#39;s+Lakewood+Computer!5e0!3m2!1sen!2sus!4v1546905365449" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe><center>
+            <br />
+            <br />
+            <br />
           <div class="row orangeBackground">
             <br />
             <center><p id="footer">14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - © 2019 Joe's Lakewood Computer</p></center>
@@ -107,8 +142,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script language="javascript">
   $(document).ready(function(){
+    var d = new Date();
     var n = d.getFullYear();
-    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + d + " Joe's Lakewood Computer");
+    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + n + " Joe's Lakewood Computer");
   });
 	$('.navbar-collapse a').click(function(){
 		$(".navbar-collapse").collapse('hide');
