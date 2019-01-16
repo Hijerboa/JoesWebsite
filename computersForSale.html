@@ -65,10 +65,10 @@
       background-color: #FFF;
   }
   p{
-    font-size: 18px;
+    font-size: 20px;
   }
   .itemForSale{
-    background-color: red;
+    background-color: white;
   }
   </style>
   <body>
@@ -101,29 +101,107 @@
           <br />
           <br />
           <br />
+          <br />
           <center><a href="#" class="btn btn-primary" role="button" id="hideDesktops">Hide Desktops</a> <a href="#" class="btn btn-primary" role="button" id="hideLaptops">Hide Laptops</a> <a href="#" class="btn btn-primary" role="button" id="priceOrder">Prices High To Low</a></center>
           <br />
           <br />
           <div class="row">
             <div class="col-md-6">
-              <div class="itemForSale">
+              <div class="col-md-10 col-md-offset-1 itemForSale">
                 <div class="col-md-6">
-                  <p>Hi</p>
+                  <br />
+                  <center><img src="testimage1.jpg"></center>
+                  <br />
+                  <br />
                 </div>
                 <div class="col-md-6">
-                  <p>hi</p>
+                  <center>
+                    <br />
+                    <p style="font-weight: bold;">Clone Gaming Tower</p>
+                    <p>Intel i7-3770</p>
+                    <p>Quad Core @ 3.4GHz</p>
+                    <p>16GB RAM</p>
+                    <p>120 GB SSD & 500 GB HD</p>
+                    <p>Windows 10 Pro</p>
+                    <p>NVIDIA GTX 970</p>
+                    <h1 style="font-weight: bold;">$1200.00</h1>
+                  </center>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
+              <div class="col-md-10 col-md-offset-1 itemForSale">
+                <div class="col-md-6">
+                  <br />
+                  <center><img src="testimage2.jpg"></center>
+                  <br />
+                  <br />
+                </div>
+                <div class="col-md-6">
+                  <center>
+                    <br />
+                    <p style="font-weight: bold;">Clone Gaming Tower</p>
+                    <p>AMD FX(tm) 8350</p>
+                    <p>Eight Core @ 4.0 GHz</p>
+                    <p>8GB RAM</p>
+                    <p>120 GB SSD & 1 TB HD</p>
+                    <p>Windows 10 Home</p>
+                    <h1 style="font-weight: bold;">$900.00</h1>
+                    <br />
+                  </center>
+                </div>
+              </div>
             </div>
           </div>
+          <br />
           <div class="row">
             <div class="col-md-6">
+              <div class="col-md-10 col-md-offset-1 itemForSale">
+                <div class="col-md-6">
+                  <br />
+                  <center><img src="testimage3.jpg"></center>
+                  <br />
+                  <br />
+                </div>
+                <div class="col-md-6">
+                  <center>
+                    <br />
+                    <p style="font-weight: bold;">Dell Optiplex 9010</p>
+                    <p>Intel i7-3774</p>
+                    <p>Quad Core @ 3.4GHz</p>
+                    <p>8GB RAM</p>
+                    <p>120 GB SSD & 500 GB Data Drive</p>
+                    <p>Windows 10 Pro</p>
+                    <h1 style="font-weight: bold;">$700.00</h1>
+                  </center>
+                </div>
+              </div>
             </div>
             <div class="col-md-6">
+              <div class="col-md-10 col-md-offset-1 itemForSale">
+                <div class="col-md-6">
+                  <br />
+                  <center><img src="testimage4.jpg"></center>
+                  <br />
+                  <br />
+                </div>
+                <div class="col-md-6">
+                  <center>
+                    <br />
+                    <p style="font-weight: bold;">Gaming Computer</p>
+                    <p>AMD Phenom III X6 1055T</p>
+                    <p>Six Core @ 2.8 GHz</p>
+                    <p>16GB RAM</p>
+                    <p>1 TB HD</p>
+                    <p>Windows 10 Home 64 Bit</p>
+                    <p>GTX 750 Ti 2GB</p>
+                    <h1 style="font-weight: bold;">$700.00</h1>
+                  </center>
+                </div>
+              </div>
             </div>
           </div>
+          <br />
           <div class="row orangeBackground">
             <br />
             <center><p id="footer">14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - © 2019 Joe's Lakewood Computer</p></center>
@@ -162,6 +240,15 @@
     }else{
       showDesktops = true;
       $("#hideDesktops").html("Hide Desktops");
+    }
+  });
+  $("#priceOrder").click(function(){
+    if(highToLow){
+      highToLow = false;
+      $("#priceOrder").html("Prices Low To High");
+    }else{
+      highToLow = true;
+      $("#priceOrder").html("Prices High to Low");
     }
   });
   </script>
