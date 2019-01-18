@@ -69,6 +69,8 @@
   }
   .itemForSale{
     background-color: white;
+    height: auto;
+    border: 1px solid;
   }
   .productImage{
     max-width: 100%;
@@ -76,6 +78,10 @@
   .header{
     font-size: 36px;
     font-weight: bold;
+  }
+  .thing{
+    height: auto;
+    top: 10px; bottom:20px; left: 10px
   }
   </style>
   <body>
@@ -117,8 +123,8 @@
           <br />
           <br />
           <div class="row">
-            <div class="col-md-6">
-              <div class="col-md-10 col-md-offset-1 itemForSale">
+            <div class="col-md-6 thing">
+              <div class="col-md-12 itemForSale">
                 <div class="col-md-6">
                   <br />
                   <center><img src="testimage1.jpg" class="productImage"></center>
@@ -141,8 +147,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="col-md-10 col-md-offset-1 itemForSale">
+            <div class="col-md-6 thing">
+              <div class="col-md-12 itemForSale">
                 <div class="col-md-6">
                   <br />
                   <center><img src="testimage2.jpg" class="productImage"></center>
@@ -167,8 +173,8 @@
           </div>
           <br />
           <div class="row">
-            <div class="col-md-6">
-              <div class="col-md-10 col-md-offset-1 itemForSale">
+            <div class="col-md-6 thing">
+              <div class="col-md-12 itemForSale">
                 <div class="col-md-6">
                   <br />
                   <center><img src="testimage3.jpg" class="productImage"></center>
@@ -190,8 +196,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="col-md-10 col-md-offset-1 itemForSale">
+            <div class="col-md-6 thing">
+              <div class="col-md-12 itemForSale">
                 <div class="col-md-6">
                   <br />
                   <center><img src="testimage4.jpg" class="productImage"></center>
@@ -217,8 +223,8 @@
           </div>
           <br />
           <div class="row">
-            <div class="col-md-6">
-              <div class="col-md-10 col-md-offset-1 itemForSale">
+            <div class="col-md-6 thing">
+              <div class="col-md-12 itemForSale">
                 <div class="col-md-6">
                   <br />
                   <center><img src="testimage5.jpg" class="productImage"></center>
@@ -238,8 +244,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="col-md-10 col-md-offset-1 itemForSale">
+            <div class="col-md-6 thing">
+              <div class="col-md-12 itemForSale">
                 <div class="col-md-6">
                   <br />
                   <center><img src="testimage6.jpg" class="productImage"></center>
@@ -311,5 +317,6 @@
       $("#priceOrder").html("Prices High to Low");
     }
   });
+
   </script>
 </html>
