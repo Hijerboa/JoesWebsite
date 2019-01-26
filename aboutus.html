@@ -74,6 +74,10 @@
   #storefront{
     max-width: 80%;
   }
+  #Site-Navbar {
+    font-size: 16px;
+    font-weight: bold;
+  }
   </style>
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -168,7 +172,7 @@
     var d = new Date();
     var n = d.getFullYear();
     $("#servingSince2008").html("For the past " + (n - 2008) + " years we have been providing you with an assortment of high quality refurbished computers and computer parts at competetive and fair prices, with excellent service and an exceptional customer support experience.");
-    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + n + " Joe's Lakewood Computer");
+    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - " + &#169; + n + " Joe's Lakewood Computer");
   });
 	$('.navbar-collapse a').click(function(){
 		$(".navbar-collapse").collapse('hide');

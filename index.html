@@ -145,7 +145,10 @@
     .carousel-item  {
        height: 100%;
     }
-
+    #Site-Navbar {
+      font-size: 16px;
+      font-weight: bold;
+    }
 </style>
 <body>
   <script src="https://use.fontawesome.com/f9b33de092.js"></script>
@@ -307,7 +310,7 @@ to all of our diverse westside communities.</h1>
   $(document).ready(function(){
     var d = new Date();
     var n = d.getFullYear();
-    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + n + " Joe's Lakewood Computer");
+    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - " + &#169; + n + " Joe's Lakewood Computer");
   });
 	$('.navbar-collapse a').click(function(){
 		$(".navbar-collapse").collapse('hide');
