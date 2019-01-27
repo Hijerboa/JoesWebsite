@@ -78,6 +78,10 @@
     font-size: 16px;
     font-weight: bold;
   }
+  #SOSThing{
+    color: red;
+    font-size: 30px;
+  }
   </style>
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -100,6 +104,7 @@
               <li><a href="repairServices.html">Repair Services</a></li>
     					<li><a href="contactUs.html">Contact Us</a></li>
               <li><a href="ourLakewoodFriends.html">Our Lakewood Friends</a></li>
+              <li><a href="https://d17kmd0va0f0mp.cloudfront.net/sos/SplashtopSOS.exe"id="SOSThing" class="hidden-sm hidden-xs">SOS</a></li>
     				</ul>
     				</div>
     		</div>
@@ -172,7 +177,7 @@
     var d = new Date();
     var n = d.getFullYear();
     $("#servingSince2008").html("For the past " + (n - 2008) + " years we have been providing you with an assortment of high quality refurbished computers and computer parts at competetive and fair prices, with excellent service and an exceptional customer support experience.");
-    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - " + &#169; + n + " Joe's Lakewood Computer");
+    $("#footer").html("14035 Madison Ave. Lakewood OH 44107 - (216) 651-3880 - ©" + n + " Joe's Lakewood Computer");
   });
 	$('.navbar-collapse a').click(function(){
 		$(".navbar-collapse").collapse('hide');
